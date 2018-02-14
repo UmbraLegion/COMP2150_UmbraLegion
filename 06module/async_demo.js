@@ -1,14 +1,22 @@
 var fs = require('fs')
-var myNumber = undefined 
+var path = require('path')
+var list = []
+var extn = ''
 
-function addOne(callBeck) {
-    fs.readFile('number.txt', function doneReading(err, fileContents) {
-        myNumber = parseInt(fileContents)
-        myNumber++
-        callback()
+
+module.exports = function(directory, extension, callback) {
+
+    // add the dot to the file extension
+    extn = '.' + extension
+    fs.readdir(directory, (err, fileArr) => {
+        if(err)
+            return callback(err)
+    
+        // If there is no error, read the list of files using forEach loop.
+        fileArr.forEach(file => {
+            if(path.extname(file) === extn)
+                list.push(file)
+        })
+        callback(null, list)
     })
 }
-
-console.log(myNumber)
-
-addOne(logMyNumber)
