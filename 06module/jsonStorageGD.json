@@ -1,0 +1,21 @@
+{
+"music" : {
+    "song" : [
+       {
+        "title" : "Kidnap The Sandy Claws",
+        "band" : "Korn",
+        "album" : "Nightmare Revisted"
+        },
+        {
+        "title" : "115",
+        "band" : "Treyarch Sound",
+        "album" : "Call of Duty: Black Ops- Zombies Soundtrack"
+        },
+        {
+        "title" : "Through Glass",
+        "band" : "Stone Sour",
+        "album" : "Come What(ever) May"
+        }
+        ]   
+   }
+}
