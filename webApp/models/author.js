@@ -1,0 +1,19 @@
+var mongoose = require('mongoose');
+
+var scheme = mongoose.Schema;
+ var AuthorScheme = new Schema({
+     first_name: {type: String, required: true, max: 100},
+     last_name: {type: String, required: true, max: 100},
+     date_of_birth: {type: Date},
+     date_of_death: {type: Date}
+ });
+
+ AuthorSchema.virtual('name').get(function() {
+     return this.last_name + ', ' + this.first_name;
+ });
+
+ AuthorSchema.virtual('url').get(function() {
+     return 'catalog/author/' + this._id;
+});
+
+module.exports = mongoose.model('Author' , AuthorSchema);
