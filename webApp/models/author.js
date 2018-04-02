@@ -1,19 +1,23 @@
 var mongoose = require('mongoose');
 
-var scheme = mongoose.Schema;
- var AuthorScheme = new Schema({
-     first_name: {type: String, required: true, max: 100},
-     last_name: {type: String, required: true, max: 100},
-     date_of_birth: {type: Date},
-     date_of_death: {type: Date}
- });
+var Schema = mongoose.Schema;
 
- AuthorSchema.virtual('name').get(function() {
-     return this.last_name + ', ' + this.first_name;
- });
+var AuthorSchema = new Schema (
+    {
+        first_name: {type: String, required: true, max: 100},
+        family_name: {type: String, required: true, max: 100},
+        date_of_birth: {type: Date},
+        date_of_death: {type: Date}
+    }
+);
 
- AuthorSchema.virtual('url').get(function() {
-     return 'catalog/author/' + this._id;
+AuthorSchema.virtual('name').get(function() {
+    return this.family_name + ', ' + this.first_name;
 });
 
-module.exports = mongoose.model('Author' , AuthorSchema);
+AuthorSchema.virtual('url').get(function() {
+    return 'catalog/author/' + this._id;
+});
+
+// Export this model
+module.exports = mongoose.model('Author', AuthorSchema);
