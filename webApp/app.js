@@ -13,9 +13,9 @@ var app = express();
 //Set up Mongoose connection
 
 var mongoose = require('mongoose')
-var mongoDB = 'mongodb://Umbra:dbserver@ds027896.mlab.com:27896/local_library';
+var mongoDB = 'mongodb://Legion:dbserver@ds027896.mlab.com:27896/local_library';
 mongoose.connect(mongoDB);
-momgoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 

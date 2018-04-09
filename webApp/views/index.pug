@@ -2,4 +2,20 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to #[em LocalLibrary]!
+
+  h1 Dynamic Content
+
+  if error
+    p Error getting dynamic content.
+  else
+    p The library has the following record counts:
+
+    ul
+      li #[strong Books:] !{data.book_count}
+      li #[strong Copies:] !{data.booksinstance_count}
+      li #[strong Copies Available:] !{data.booksinstance_available_count}
+      li #[strong Author:] !{data.Author_count}
+      li #[strong Genre:] !{data.genre_count}
+    
+
