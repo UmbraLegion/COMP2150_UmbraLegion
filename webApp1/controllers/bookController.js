@@ -30,7 +30,6 @@ exports.index = function(rq, res) {
 
 
 //Display list of Books
-
 exports.book_list = function(req, res) {
     res.send('NOT IMPLEMENTED: Book List.');
 };
