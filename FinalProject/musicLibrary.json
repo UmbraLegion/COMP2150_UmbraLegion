@@ -1,0 +1,184 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "MusicAlbum",
+  "inAlbum":[
+      {
+
+      }
+  ] ,
+  "name": "Phobia",
+  "byArtist": {
+    "@type": "MusicGroup",
+    "name": "Breaking Benjamin"
+  },
+  "image": "https://en.wikipedia.org/wiki/File:Phobia-Breaking_Benjamin_album.jpg",
+  "genre": "Hard Rock",
+  "numtracks": "13",
+  "track": [
+    {
+      "@type": "MusicRecording",
+      "position": "1",
+      "name": "Intro",
+      "duration": "PT1M15S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "2",
+      "name": "The Diary Of Jane",
+      "duration": "PT3M20S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "3",
+      "name": "Breath",
+      "duration": "PT3M38S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "4",
+      "name": "You",
+      "duration": "PT3M21S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "5",
+      "name": "Evil Angel",
+      "duration": "PT3M41S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "6",
+      "name": "Until The End",
+      "duration": "PT4M12S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "7",
+      "name": "Dance With the Devil",
+      "duration": "PT3M41S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "8",
+      "name": "Topless",
+      "duration": "PT3M03S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "9",
+      "name": "Here We Are",
+      "duration": "PT4M18S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "10",
+      "name": "Unknown Soldier",
+      "duration": "PT3M46S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "11",
+      "name": "Had Enough",
+      "duration": "PT3M50S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "12",
+      "name": "You Fight Me",
+      "duration": "PT3M12S"
+    },
+    {
+      "@type": "MusicRecording",
+      "position": "13",
+      "name": "Outro",
+      "duration": "PT2M09S"
+    }
+  ]
+},
+
+
+
+
+
+
+{
+    "@context": "http://schema.org/",
+    "@type": "MusicAlbum",
+    "name": "Dear Agony",
+    "byArtist": {
+      "@type": "MusicGroup",
+      "name": "Breaking Benjamin"
+    },
+    "image": "https://en.wikipedia.org/wiki/File:Breakingbenjamindearagony.jpg",
+    "url": "",
+    "genre": "Hard Rock",
+    "numtracks": "11",
+    "track": [
+      {
+        "@type": "MusicRecording",
+        "position": "1",
+        "name": "Fade Away",
+        "duration": "PT3M16S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "2",
+        "name": "I Will Not Bow",
+        "duration": "PT3M36S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "3",
+        "name": "Crawl",
+        "duration": "PT3M58S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "4",
+        "name": "Give Me A Sign",
+        "duration": "PT4M17S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "5",
+        "name": "Hopeless",
+        "duration": "PT3M20S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "6",
+        "name": "What Lies Beneath",
+        "duration": "PT3M34S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "7",
+        "name": "Anthem Of The Angels",
+        "duration": "PT4M02S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "8",
+        "name": "Lights Out",
+        "duration": "PT3M33S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "9",
+        "name": "Dear Agony",
+        "duration": "PT4M18S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "10",
+        "name": "Into The  Nothing",
+        "duration": "PT3M43S"
+      },
+      {
+        "@type": "MusicRecording",
+        "position": "11",
+        "name": "Without You",
+        "duration": "PT4M18S"
+      }
+    ]
+  } 
